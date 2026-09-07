@@ -1,9 +1,8 @@
 cask "eid-sk" do
-  version "5.3"
-  sha256 "1c9cdb4e7c819844e310a5aba46be95479ee9a98e3868808b65728f7f087bbb7"
+  version "5.4"
+  sha256 "2d6996d0e255cd6b5bcecdfa0623ba1fbc23d1ef483ce6c95ca4d2e66f51e3c5"
 
-  url "https://eidas.minv.sk/downloadservice/eidklient/mac/eID_klient.dmg#v=#{version}",
-      verified: "eidas.minv.sk/downloadservice/eidklient/mac/"
+  url "https://eidas.minv.sk/download/files/mac/eID_klient.dmg"
   name "Aplikacia pre eID"
   name "eID Klient"
   name "Electronic identity card software for Slovakia"
@@ -12,8 +11,8 @@ cask "eid-sk" do
   homepage "https://www.slovensko.sk/sk/titulna-stranka"
 
   livecheck do
-    url "https://eidas.minv.sk/download"
-    regex(/eID klient (\d+(?:\.\d+)+) pre macOS/i)
+    url "https://eidas.minv.sk/download/files/mac/eID_klient_release_notes.txt"
+    regex(/eID klient.*?verzia (\d+(?:\.\d+)+) macOS/i)
   end
 
   auto_updates true
