@@ -2,8 +2,7 @@ cask "eid-sk" do
   version "5.3"
   sha256 "1c9cdb4e7c819844e310a5aba46be95479ee9a98e3868808b65728f7f087bbb7"
 
-  url "https://eidas.minv.sk/downloadservice/eidklient/mac/eID_klient.dmg#v=#{version}",
-      verified: "eidas.minv.sk/downloadservice/eidklient/mac/"
+  url "https://eidas.minv.sk/downloadservice/eidklient/mac/eID_klient.dmg#v=#{version}"
   name "Aplikacia pre eID"
   name "eID Klient"
   name "Electronic identity card software for Slovakia"
